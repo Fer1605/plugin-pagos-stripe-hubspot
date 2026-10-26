@@ -1,0 +1,32 @@
+/* HubSpot Elementor Form - admin */
+.hef-wrap .hef-badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;line-height:1.6;color:#fff}
+.hef-wrap .hef-badge--success{background:#0b8043}
+.hef-wrap .hef-badge--error{background:#d93025}
+.hef-wrap .hef-badge--pending{background:#b06000}
+.hef-wrap .hef-badge--skipped{background:#646970}
+.hef-wrap .hef-muted{color:#646970}
+.hef-wrap .hef-details{margin:0 0 4px}
+.hef-wrap .hef-details summary{cursor:pointer;color:#2271b1}
+.hef-wrap .hef-pre{max-height:260px;overflow:auto;background:#f6f7f7;border:1px solid #dcdcde;border-radius:3px;padding:8px;margin:6px 0;font-size:11px;line-height:1.5;white-space:pre-wrap;word-break:break-word}
+.hef-wrap .column-detail{width:26%}
+.hef-wrap .column-status{width:16%}
+.hef-wrap .hef-help li{margin-bottom:6px}
+
+/* Instrucciones del token y escáner */
+.hef-wrap .hef-howto{margin:12px 0;padding:12px 14px;background:#fff;border:1px solid #dcdcde;border-left:4px solid #2271b1;border-radius:3px;max-width:820px}
+.hef-wrap .hef-howto summary{cursor:pointer;outline:none}
+.hef-wrap .hef-howto ol{margin:12px 0 6px 20px}
+.hef-wrap .hef-howto ol li{margin-bottom:8px;line-height:1.6}
+.hef-wrap .hef-howto .hef-scopes{margin:6px 0 0 18px;list-style:disc}
+.hef-wrap .hef-howto code{background:#f0f0f1;padding:1px 5px;border-radius:2px}
+.hef-wrap .hef-tip{margin:10px 0 0;padding:8px 10px;background:#f6f7f7;border-radius:3px}
+.hef-wrap .notice.inline{margin:10px 0}
+.hef-wrap .hef-scan-summary{max-width:820px;margin-bottom:24px}
+.hef-wrap .hef-scan-summary th{width:220px}
+.hef-wrap .hef-options{font-size:11px;word-break:break-word}
+
+/* Barra de filtros del registro */
+.hef-wrap .hef-filter-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0 12px;padding:10px 12px;background:#fff;border:1px solid #dcdcde;border-radius:3px}
+.hef-wrap .hef-filter-bar label{font-weight:600;color:#3c434a}
+.hef-wrap .hef-filter-bar select{max-width:220px}
+.hef-wrap .hef-filter-bar .button-link{color:#b32d23}

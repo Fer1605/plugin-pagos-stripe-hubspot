@@ -1,0 +1,2220 @@
+# Copyright (C) 2026 Fer Santizo
+# This file is distributed under the same license as the Pagos Stripe + HubSpot para Elementor plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pagos Stripe + HubSpot para Elementor 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sw-pagos-stripe-hubspot\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-07T19:57:36+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: sw-pagos\n"
+
+#. Plugin Name of the plugin
+#: sw-pagos-stripe-hubspot.php
+msgid "Pagos Stripe + HubSpot para Elementor"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: sw-pagos-stripe-hubspot.php
+msgid "https://github.com/Fer1605/plugin-pagos-stripe-hubspot"
+msgstr ""
+
+#. Description of the plugin
+#: sw-pagos-stripe-hubspot.php
+msgid "Cobros con Stripe —pago único y suscripción mensual— desde formularios de Elementor, con registro en HubSpot, plantillas de correo, páginas de resultado, bitácoras y reportería. Convive con otros módulos de pago."
+msgstr ""
+
+#. Author of the plugin
+#: sw-pagos-stripe-hubspot.php
+msgid "Fer Santizo"
+msgstr ""
+
+#: includes/Admin/Menu.php:85
+#: includes/Admin/Menu.php:86
+msgid "Pagos Stripe"
+msgstr ""
+
+#: includes/Admin/Menu.php:96
+#: includes/Admin/Menu.php:97
+msgid "Configuración"
+msgstr ""
+
+#: includes/Admin/Menu.php:105
+#: includes/Admin/Menu.php:106
+#: includes/Admin/Page_Transactions.php:58
+msgid "Transacciones"
+msgstr ""
+
+#: includes/Admin/Menu.php:114
+#: includes/Admin/Menu.php:115
+#: includes/Admin/Page_Subscriptions.php:57
+#: includes/Admin/Reports/Scheduler.php:253
+msgid "Suscripciones"
+msgstr ""
+
+#: includes/Admin/Menu.php:123
+#: includes/Admin/Page_Delivery_Logs.php:59
+msgid "Historial de entregas"
+msgstr ""
+
+#: includes/Admin/Menu.php:124
+msgid "Entregas"
+msgstr ""
+
+#: includes/Admin/Menu.php:132
+#: includes/Library/Views/library.php:17
+msgid "Biblioteca de formularios"
+msgstr ""
+
+#: includes/Admin/Menu.php:133
+msgid "Biblioteca"
+msgstr ""
+
+#: includes/Admin/Menu.php:141
+#: includes/Admin/Menu.php:142
+#: includes/Admin/Page_Diagnostics.php:44
+msgid "Diagnóstico"
+msgstr ""
+
+#: includes/Admin/Page_Base.php:38
+#: includes/Admin/Page_Diagnostics.php:40
+#: includes/Admin/Page_Settings.php:82
+#: includes/Library/Form_Library.php:75
+msgid "No tienes permisos para ver esta página."
+msgstr ""
+
+#: includes/Admin/Page_Base.php:105
+msgid "Correo, nombre o referencia"
+msgstr ""
+
+#: includes/Admin/Page_Base.php:109
+msgid "Filtrar"
+msgstr ""
+
+#: includes/Admin/Page_Base.php:113
+msgid "Limpiar"
+msgstr ""
+
+#: includes/Admin/Page_Base.php:138
+msgid "Anteriores"
+msgstr ""
+
+#. translators: %d: número de página.
+#: includes/Admin/Page_Base.php:144
+#, php-format
+msgid "Página %d"
+msgstr ""
+
+#: includes/Admin/Page_Base.php:151
+msgid "Siguientes"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:60
+msgid "Correos y llamadas a HubSpot. Un reintento añade una fila nueva: el historial nunca se borra."
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:67
+msgid "Todos los canales"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:69
+#: includes/Admin/Page_Delivery_Logs.php:261
+#: includes/Admin/Page_Transactions.php:295
+#: includes/Delivery/Post_Payment.php:510
+msgid "Correo"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:70
+#: includes/Admin/Page_Delivery_Logs.php:262
+msgid "HubSpot · formularios"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:71
+#: includes/Admin/Page_Delivery_Logs.php:263
+msgid "HubSpot · CRM"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:72
+#: includes/Admin/Page_Delivery_Logs.php:264
+msgid "Informe"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:73
+#: includes/Admin/Page_Delivery_Logs.php:265
+msgid "Alerta"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:77
+#: includes/Admin/Page_Subscriptions.php:79
+#: includes/Admin/Page_Transactions.php:69
+msgid "Todos los estados"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:79
+msgid "Éxito"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:80
+msgid "Fallo"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:81
+msgid "Pendiente"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:99
+msgid "No hay entregas registradas todavía."
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:106
+#: includes/Admin/Page_Transactions.php:115
+#: includes/Admin/Page_Transactions.php:286
+#: includes/Admin/Reports/Scheduler.php:264
+msgid "Fecha"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:107
+#: includes/Delivery/Retry_Policy.php:93
+msgid "Canal"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:108
+#: includes/Admin/Page_Subscriptions.php:120
+#: includes/Admin/Page_Transactions.php:116
+#: includes/Admin/Page_Transactions.php:186
+#: includes/Admin/Page_Transactions.php:288
+msgid "Estado"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:109
+msgid "Destino"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:110
+#: includes/Delivery/Post_Payment.php:512
+msgid "Intento"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:111
+msgid "Respuesta"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:146
+msgid "Reintentar"
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:178
+msgid "No se puede reintentar esa entrega."
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:201
+msgid "Ese canal no admite reintento automático."
+msgstr ""
+
+#: includes/Admin/Page_Delivery_Logs.php:206
+msgid "Entrega encolada. Aparecerá una fila nueva en cuanto se ejecute."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:68
+msgid "Versión de PHP"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:71
+msgid "Se requiere 8.1 o superior."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:74
+msgid "Versión de WordPress"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:77
+msgid "Se requiere 6.4 o superior."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:80
+msgid "Elementor"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:81
+#: includes/Admin/Page_Diagnostics.php:87
+msgid "no detectado"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:83
+msgid "Se requiere 3.16 o superior."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:86
+msgid "Elementor Pro"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:89
+msgid "Imprescindible: la acción tras el envío de un formulario solo existe en la versión Pro."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:92
+msgid "SDK de Stripe"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:93
+msgid "disponible"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:93
+msgid "no instalado"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:95
+msgid "Se instala con composer install. Necesario desde la fase de cobro."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:99
+msgid "Entorno"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:119
+#: includes/Admin/Page_Diagnostics.php:126
+#: includes/Delivery/Retry_Policy.php:136
+msgid "CRM de HubSpot"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:120
+#: includes/Admin/Page_Diagnostics.php:185
+msgid "conectado"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:120
+#: includes/Admin/Page_Diagnostics.php:197
+msgid "error"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:127
+msgid "sin token"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:129
+msgid "Sin token no se crean contactos ni negocios. Los formularios de HubSpot sí funcionan: es una configuración válida."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:134
+msgid "Cola de entregas"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:135
+msgid "tareas de WordPress"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:139
+msgid "Funciona, pero Action Scheduler (incluido con WooCommerce) es más fiable con mucho volumen."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:142
+msgid "Conectividad"
+msgstr ""
+
+#. translators: %s: modo.
+#: includes/Admin/Page_Diagnostics.php:154
+#, php-format
+msgid "Stripe (%s)"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:155
+#: includes/Admin/Page_Transactions.php:147
+msgid "producción"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:155
+#: includes/Admin/Page_Transactions.php:147
+msgid "prueba"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:161
+#: includes/Admin/Page_Diagnostics.php:352
+#: includes/Admin/Page_Settings.php:245
+#: includes/Admin/Page_Settings.php:266
+msgid "sin configurar"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:164
+msgid "Hace falta antes de cobrar de verdad."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:174
+msgid "credencial no válida"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:176
+msgid "Revisa que la clave corresponda al modo y que el SDK esté instalado."
+msgstr ""
+
+#. translators: 1: país de la cuenta, 2: moneda por omisión.
+#: includes/Admin/Page_Diagnostics.php:189
+#, php-format
+msgid "País %1$s · moneda %2$s"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:216
+msgid "Eventos recibidos"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:222
+msgid "Todavía no ha llegado ningún evento. Si ya hubo cobros, el punto de enlace no está bien configurado en Stripe."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:226
+msgid "Eventos sin procesar"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:231
+msgid "Se recibieron pero no se terminaron de procesar. Stripe los reintentará."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:235
+#: includes/Admin/Page_Settings.php:199
+msgid "Receptor de eventos"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:237
+msgid "Dirección que hay que dar de alta en Stripe:"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:247
+msgid "Plantillas y formularios"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:252
+msgid "Todavía no hay ninguna plantilla de pago asociada a un formulario."
+msgstr ""
+
+#. translators: %s: lista de identificadores de formulario.
+#: includes/Admin/Page_Diagnostics.php:262
+#, php-format
+msgid "Hay formularios con más de una plantilla: %s. Se usa la más reciente, lo que hace el comportamiento imprevisible."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:269
+#: includes/Admin/Page_Transactions.php:119
+#: includes/Admin/Page_Transactions.php:191
+#: includes/Admin/Page_Transactions.php:296
+#: includes/Delivery/Retry_Policy.php:94
+#: includes/Library/Variants.php:182
+#: includes/Templates/Cpt_Plantilla_Pago.php:230
+msgid "Formulario"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:270
+msgid "Plantilla"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:271
+#: includes/Templates/Cpt_Plantilla_Pago.php:231
+msgid "Montos"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:272
+#: includes/Admin/Page_Settings.php:89
+#: includes/Library/Variants.php:285
+#: includes/Templates/Cpt_Plantilla_Pago.php:233
+#: includes/Templates/Metabox_Hubspot.php:38
+msgid "HubSpot"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:293
+#: includes/Templates/Cpt_Plantilla_Pago.php:280
+msgid "configurado"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:294
+#: includes/Templates/Cpt_Plantilla_Pago.php:281
+msgid "no envía"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:299
+msgid "Que un formulario no envíe a HubSpot es una opción válida, no un error."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:313
+msgid "creada"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:313
+msgid "ausente"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:315
+msgid "Desactiva y vuelve a activar el módulo para crearla."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:320
+msgid "Versión del esquema"
+msgstr ""
+
+#. translators: %d: número de versión del esquema.
+#: includes/Admin/Page_Diagnostics.php:325
+#, php-format
+msgid "Esperada: %d."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:330
+msgid "Base de datos"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:342
+msgid "Clave secreta de Stripe (prueba)"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:343
+msgid "Secreto del webhook (prueba)"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:344
+msgid "Clave secreta de Stripe (producción)"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:345
+msgid "Secreto del webhook (producción)"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:346
+msgid "Token de HubSpot"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:350
+#: includes/Admin/Page_Settings.php:243
+msgid "wp-config.php"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:351
+#: includes/Admin/Page_Settings.php:244
+msgid "base de datos"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:366
+msgid "Funciona, pero lo recomendado es definirla en wp-config.php."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:371
+msgid "Credenciales"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:380
+msgid "Convivencia"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:385
+msgid "No se detectaron otros módulos de pago en el sitio."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:387
+msgid "Otros módulos de pago activos en este sitio:"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:392
+msgid "Su presencia es el escenario previsto, no un problema: este módulo usa nombres, tablas y opciones propios, y no lee ni escribe en los suyos."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:399
+msgid "Rastros del módulo de pagos anterior encontrados en este sitio:"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:401
+msgid "Ninguno coincide con los nombres que usa este módulo."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:408
+msgid "Sin conflictos de nombres."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:410
+msgid "Conflictos detectados:"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:422
+msgid "Nombres que reclama el módulo"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:426
+msgid "Acciones de Elementor"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:427
+msgid "Campo de formulario"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:428
+msgid "Campos técnicos"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:429
+msgid "Tipo de contenido"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:430
+msgid "Shortcodes"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:431
+msgid "Rutas de API"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:432
+msgid "Tarea programada"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:433
+msgid "Prefijo de tablas y opciones"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:434
+msgid "Prefijo de constantes"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:461
+msgid "no programada"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:463
+msgid "Desactiva y vuelve a activar el módulo para programarla."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:466
+msgid "Cron de WordPress"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:468
+msgid "desactivado en wp-config.php"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:469
+msgid "activo"
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:471
+msgid "Si está desactivado, debe haber un cron del sistema llamando a wp-cron.php."
+msgstr ""
+
+#: includes/Admin/Page_Diagnostics.php:475
+msgid "Tareas programadas"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:87
+msgid "General"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:88
+msgid "Stripe"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:99
+msgid "Pagos Stripe + HubSpot"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:127
+msgid "Guardar cambios"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:145
+msgid "Moneda por omisión"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:147
+msgid "Código ISO de tres letras, por ejemplo USD, GTQ o EUR. Cada plantilla de pago puede usar otra."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:150
+msgid "Nivel de registro"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:153
+msgid "Automático (advertencias y errores)"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:154
+msgid "Depuración (todo)"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:155
+msgid "Información"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:156
+msgid "Advertencias"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:157
+msgid "Solo errores"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:168
+msgid "Las claves secretas y los datos personales se redactan siempre, en cualquier nivel."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:171
+msgid "Avisos de fallo de entrega"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:173
+msgid "Separa varias direcciones con comas. Reciben aviso cuando un correo o un envío a HubSpot agota sus reintentos."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:176
+msgid "Al desinstalar"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:178
+msgid "Borrar transacciones, suscripciones, bitácoras y plantillas"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:179
+msgid "Desactivado por omisión: el historial de cobros no se borra porque alguien desinstale el plugin."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:191
+msgid "Las credenciales se leen primero de wp-config.php y, si no están ahí, de la base de datos. Lo recomendado es wp-config.php: un volcado de la base de datos no debe entregar las claves de cobro."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:200
+msgid "Da de alta esta dirección en el panel de Stripe como destino de webhooks:"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:202
+msgid "Prueba y producción usan secretos de firma distintos. Un evento cuya firma no se pueda verificar se rechaza y no mueve ningún estado."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:213
+msgid "Todos los formularios del módulo vienen preparados para HubSpot. Usarlo es opcional: un formulario sin Portal ID y sin Form GUID simplemente no envía nada, y eso es una configuración válida, no un error."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:217
+msgid "Token de la aplicación privada"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:219
+msgid "Portal ID global"
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:221
+msgid "Solo se usa para prerrellenar el campo al crear un formulario desde la biblioteca. No actúa como destino de respaldo."
+msgstr ""
+
+#. translators: %s: nombre de la constante de PHP.
+#: includes/Admin/Page_Settings.php:261
+#, php-format
+msgid "Definida por la constante %s. Para cambiarla, edita wp-config.php."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:269
+msgid "Déjalo vacío para conservar el valor actual."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:270
+msgid "Borrar"
+msgstr ""
+
+#. translators: %s: nombre de la constante de PHP.
+#: includes/Admin/Page_Settings.php:274
+#, php-format
+msgid "Recomendado: definir %s en wp-config.php."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:301
+msgid "No tienes permisos para guardar esta configuración."
+msgstr ""
+
+#: includes/Admin/Page_Settings.php:318
+msgid "Configuración guardada."
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:66
+msgid "Activas"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:67
+#: includes/Admin/Page_Subscriptions.php:82
+msgid "En impago"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:69
+msgid "Ingreso recurrente"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:72
+msgid "Altas este mes"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:73
+msgid "Bajas este mes"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:81
+msgid "Activa"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:83
+msgid "Pausada"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:84
+msgid "Cancelada"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:88
+#: includes/Admin/Page_Transactions.php:73
+msgid "Todos los modos"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:90
+#: includes/Admin/Page_Transactions.php:75
+msgid "Prueba"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:91
+#: includes/Admin/Page_Transactions.php:76
+msgid "Producción"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:110
+msgid "No hay suscripciones que coincidan con el filtro."
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:119
+msgid "Alta"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:121
+#: includes/Admin/Page_Transactions.php:117
+#: includes/Admin/Page_Transactions.php:187
+#: includes/Admin/Page_Transactions.php:291
+#: includes/Admin/Reports/Scheduler.php:266
+#: includes/Elementor/Form_Validator.php:99
+#: includes/Library/Variants.php:221
+msgid "Importe"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:122
+#: includes/Admin/Page_Transactions.php:118
+#: includes/Admin/Page_Transactions.php:190
+#: includes/Admin/Reports/Scheduler.php:265
+#: includes/Delivery/Post_Payment.php:509
+msgid "Persona"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:123
+msgid "Próximo cobro"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:124
+msgid "Cobros"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:125
+msgid "Acciones"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:141
+msgid "se cancela al final del período"
+msgstr ""
+
+#. translators: %d: número de intentos.
+#: includes/Admin/Page_Subscriptions.php:145
+#, php-format
+msgid "%d intentos fallidos"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:149
+msgid "al mes"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:163
+msgid "Sincronizar"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:175
+msgid "¿Cancelar esta suscripción al terminar el período ya pagado?"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:176
+msgid "Cancelar"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:215
+msgid "Suscripción sincronizada con Stripe."
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:216
+msgid "No se pudo sincronizar. Revisa las credenciales y el registro."
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:235
+msgid "No existe esa suscripción."
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:308
+msgid "activa"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:309
+msgid "en impago"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:310
+msgid "pausada"
+msgstr ""
+
+#: includes/Admin/Page_Subscriptions.php:311
+#: includes/Admin/Page_Transactions.php:351
+msgid "cancelada"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:80
+msgid "Todos los tipos"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:82
+#: includes/Admin/Page_Transactions.php:366
+#: includes/Templates/Metabox_Montos.php:134
+msgid "Pago único"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:83
+msgid "Alta de suscripción"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:84
+#: includes/Admin/Page_Transactions.php:368
+msgid "Renovación"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:104
+msgid "Exportar a CSV"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:108
+msgid "No hay transacciones que coincidan con el filtro."
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:120
+#: includes/Admin/Page_Transactions.php:188
+#: includes/Admin/Page_Transactions.php:290
+#: includes/Admin/Reports/Scheduler.php:267
+msgid "Tipo"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:121
+#: includes/Admin/Page_Transactions.php:189
+#: includes/Admin/Page_Transactions.php:289
+msgid "Modo"
+msgstr ""
+
+#. translators: %s: importe devuelto.
+#: includes/Admin/Page_Transactions.php:138
+#, php-format
+msgid "devuelto: %s"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:151
+msgid "Ver"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:174
+msgid "Volver al listado"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:178
+msgid "No existe esa transacción."
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:185
+#: includes/Admin/Page_Transactions.php:287
+msgid "Referencia"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:192
+msgid "Creada"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:193
+msgid "Pagada"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:194
+msgid "Sesión de pago"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:195
+msgid "Intención de pago"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:196
+msgid "Contacto en HubSpot"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:197
+msgid "Negocio en HubSpot"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:203
+msgid "Motivo del fallo"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:216
+msgid "Historial de estados"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:231
+msgid "Entregas de esta transacción"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:234
+msgid "Todavía no hay entregas registradas."
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:292
+#: includes/Templates/Metabox_Montos.php:56
+msgid "Moneda"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:293
+msgid "Devuelto"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:294
+msgid "Nombre"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:297
+msgid "Período"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:298
+msgid "Referencia de Stripe"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:299
+msgid "Negocio de HubSpot"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:345
+msgid "iniciada"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:346
+msgid "rechazada"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:347
+msgid "pendiente"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:348
+msgid "procesando"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:349
+msgid "pagada"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:350
+msgid "fallida"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:352
+msgid "reembolsada"
+msgstr ""
+
+#: includes/Admin/Page_Transactions.php:367
+msgid "Alta mensual"
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:73
+#: includes/Library/Form_Library.php:107
+msgid "No tienes permisos para esta acción."
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:83
+msgid "No existe esa plantilla."
+msgstr ""
+
+#. translators: 1: nombre del sitio, 2: nombre de la campaña.
+#: includes/Admin/Reports/Scheduler.php:167
+#, php-format
+msgid "[%1$s] Informe de %2$s"
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:186
+#: includes/Templates/Metabox_Reporte.php:125
+msgid "Informe enviado."
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:187
+msgid "No se pudo enviar el informe."
+msgstr ""
+
+#. translators: 1: fecha inicial, 2: fecha final.
+#: includes/Admin/Reports/Scheduler.php:241
+#, php-format
+msgid "Período del %1$s al %2$s"
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:247
+msgid "Cobros del período"
+msgstr ""
+
+#. translators: %d: número.
+#: includes/Admin/Reports/Scheduler.php:248
+#, php-format
+msgid "Cobros confirmados: %d"
+msgstr ""
+
+#. translators: %s: importe.
+#: includes/Admin/Reports/Scheduler.php:249
+#, php-format
+msgid "Total recaudado: %s"
+msgstr ""
+
+#. translators: %d: número.
+#: includes/Admin/Reports/Scheduler.php:250
+#, php-format
+msgid "Cobros fallidos: %d"
+msgstr ""
+
+#. translators: %d: número.
+#: includes/Admin/Reports/Scheduler.php:254
+#, php-format
+msgid "Activas: %d"
+msgstr ""
+
+#. translators: %s: importe.
+#: includes/Admin/Reports/Scheduler.php:255
+#, php-format
+msgid "Ingreso recurrente mensual: %s"
+msgstr ""
+
+#. translators: %d: número.
+#: includes/Admin/Reports/Scheduler.php:256
+#, php-format
+msgid "Altas del período: %d"
+msgstr ""
+
+#. translators: %d: número.
+#: includes/Admin/Reports/Scheduler.php:257
+#, php-format
+msgid "Cobros en impago: %d"
+msgstr ""
+
+#. translators: %d: número.
+#: includes/Admin/Reports/Scheduler.php:258
+#, php-format
+msgid "Bajas del período: %d"
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:262
+msgid "Detalle"
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:274
+msgid "renovación"
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:274
+msgid "único"
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:281
+msgid "Se muestran los primeros 100. El listado completo está en el panel."
+msgstr ""
+
+#: includes/Admin/Reports/Scheduler.php:285
+msgid "Ver todas las transacciones"
+msgstr ""
+
+#: includes/Core/Compat.php:278
+msgid "Otro plugin registró este tipo de contenido antes del módulo."
+msgstr ""
+
+#: includes/Core/Compat.php:292
+msgid "Otro plugin registró este shortcode."
+msgstr ""
+
+#: includes/Core/Compat.php:303
+msgid "La constante no está definida: el módulo no cargó por completo."
+msgstr ""
+
+#: includes/Core/Compat.php:314
+msgid "La tabla no existe. Desactiva y vuelve a activar el módulo."
+msgstr ""
+
+#: includes/Core/Compat.php:404
+msgid "Pagos Stripe + HubSpot: conflictos detectados"
+msgstr ""
+
+#: includes/Delivery/Email_Service.php:52
+msgid "El destinatario no resolvió a una dirección válida. Revisa el marcador configurado en «Enviar a»."
+msgstr ""
+
+#: includes/Delivery/Email_Service.php:107
+msgid "Aceptado por el servidor de correo. No garantiza la entrega en bandeja."
+msgstr ""
+
+#: includes/Delivery/Email_Service.php:108
+msgid "wp_mail devolvió false sin detallar el motivo."
+msgstr ""
+
+#: includes/Delivery/Post_Payment.php:212
+msgid "Reembolso reflejado en el negocio de HubSpot."
+msgstr ""
+
+#: includes/Delivery/Post_Payment.php:259
+msgid "No se pudo enviar el correo."
+msgstr ""
+
+#: includes/Delivery/Post_Payment.php:302
+msgid "Fallo al enviar el formulario a HubSpot."
+msgstr ""
+
+#. translators: 1: identificador del contacto, 2: identificador del negocio.
+#: includes/Delivery/Post_Payment.php:394
+#, php-format
+msgid "Contacto %1$s y negocio %2$s creados en HubSpot."
+msgstr ""
+
+#. translators: %s: nombre del sitio.
+#: includes/Delivery/Post_Payment.php:502
+#, php-format
+msgid "[%s] Cobro mensual fallido"
+msgstr ""
+
+#: includes/Delivery/Post_Payment.php:507
+msgid "Un cobro de suscripción no se pudo completar."
+msgstr ""
+
+#: includes/Delivery/Post_Payment.php:511
+msgid "Importe mensual"
+msgstr ""
+
+#: includes/Delivery/Post_Payment.php:514
+msgid "Ya se le envió un aviso con el enlace para actualizar su medio de pago."
+msgstr ""
+
+#. translators: 1: nombre del sitio, 2: canal de entrega.
+#: includes/Delivery/Retry_Policy.php:84
+#, php-format
+msgid "[%1$s] Una entrega de %2$s agotó sus reintentos"
+msgstr ""
+
+#: includes/Delivery/Retry_Policy.php:90
+msgid "Una entrega del módulo de pagos no se pudo completar tras todos los reintentos."
+msgstr ""
+
+#: includes/Delivery/Retry_Policy.php:92
+msgid "Sitio"
+msgstr ""
+
+#: includes/Delivery/Retry_Policy.php:95
+#: includes/Elementor/Form_Validator.php:93
+#: includes/Library/Variants.php:181
+msgid "Transacción"
+msgstr ""
+
+#: includes/Delivery/Retry_Policy.php:96
+msgid "Último error"
+msgstr ""
+
+#: includes/Delivery/Retry_Policy.php:98
+msgid "El cobro no se ve afectado: lo que falló es la entrega posterior."
+msgstr ""
+
+#: includes/Delivery/Retry_Policy.php:99
+msgid "Puedes reintentarla a mano desde:"
+msgstr ""
+
+#. translators: %s: canal de entrega.
+#: includes/Delivery/Retry_Policy.php:119
+#, php-format
+msgid "Alerta por reintentos agotados en %s."
+msgstr ""
+
+#: includes/Delivery/Retry_Policy.php:134
+msgid "correo"
+msgstr ""
+
+#: includes/Delivery/Retry_Policy.php:135
+msgid "formularios de HubSpot"
+msgstr ""
+
+#: includes/Delivery/Retry_Policy.php:137
+msgid "informe"
+msgstr ""
+
+#: includes/Domain/Amount_Policy.php:51
+msgid "La forma de pago elegida no está disponible en este formulario."
+msgstr ""
+
+#: includes/Domain/Amount_Policy.php:82
+msgid "Este formulario todavía no tiene configurado su importe. Avisa a quien administra el sitio."
+msgstr ""
+
+#: includes/Domain/Amount_Policy.php:104
+msgid "Este formulario todavía no tiene configurados sus importes. Avisa a quien administra el sitio."
+msgstr ""
+
+#. translators: %s: lista de importes permitidos.
+#: includes/Domain/Amount_Policy.php:115
+#, php-format
+msgid "Elige uno de los importes disponibles: %s."
+msgstr ""
+
+#: includes/Domain/Amount_Policy.php:148
+msgid "Escribe un importe válido mayor que cero."
+msgstr ""
+
+#. translators: %s: importe mínimo con su moneda.
+#: includes/Domain/Amount_Policy.php:158
+#, php-format
+msgid "El importe mínimo es %s."
+msgstr ""
+
+#. translators: %s: importe máximo con su moneda.
+#: includes/Domain/Amount_Policy.php:170
+#, php-format
+msgid "El importe máximo es %s."
+msgstr ""
+
+#: includes/Elementor/Action_Hubspot.php:43
+#: includes/Elementor/Action_Hubspot.php:56
+#: includes/Elementor/Field_Hubspot_Keys.php:43
+msgid "HubSpot (Pagos Stripe)"
+msgstr ""
+
+#: includes/Elementor/Action_Hubspot.php:66
+msgid "Añade un campo de tipo <strong>HubSpot (Pagos Stripe)</strong> al formulario y configura ahí el Portal ID, el Form GUID y el mapeo.<br><br>Si los dejas vacíos, el formulario no se envía a HubSpot y no se registra ningún error: es una opción válida.<br><br>El correo de notificación se toma de la <strong>plantilla de pago</strong> cuyo identificador de formulario coincida con el de este formulario."
+msgstr ""
+
+#: includes/Elementor/Action_Stripe.php:40
+msgid "Cobro con Stripe"
+msgstr ""
+
+#: includes/Elementor/Action_Stripe.php:53
+msgid "Cobro con Stripe"
+msgstr ""
+
+#: includes/Elementor/Action_Stripe.php:61
+msgid "Pasarela"
+msgstr ""
+
+#: includes/Elementor/Action_Stripe.php:71
+msgid "Cobrar de verdad"
+msgstr ""
+
+#: includes/Elementor/Action_Stripe.php:73
+msgid "Sí"
+msgstr ""
+
+#: includes/Elementor/Action_Stripe.php:74
+msgid "No"
+msgstr ""
+
+#: includes/Elementor/Action_Stripe.php:77
+msgid "Desactivado usa las credenciales de prueba de Stripe. Actívalo solo cuando el formulario esté listo para recibir dinero real."
+msgstr ""
+
+#: includes/Elementor/Action_Stripe.php:86
+msgid "El importe, la moneda y las frecuencias los decide la <strong>plantilla de pago</strong> cuyo identificador de formulario coincida con el de este formulario, no este panel.<br><br>Lo que escriba la persona en el campo de importe es una solicitud: el servidor la comprueba contra la plantilla y rechaza lo que quede fuera."
+msgstr ""
+
+#: includes/Elementor/Field_Hubspot_Keys.php:79
+msgid "Configuración de HubSpot (no se ve en la página)"
+msgstr ""
+
+#: includes/Elementor/Field_Hubspot_Keys.php:110
+msgid "Campo de este formulario"
+msgstr ""
+
+#: includes/Elementor/Field_Hubspot_Keys.php:119
+msgid "Propiedad de HubSpot"
+msgstr ""
+
+#: includes/Elementor/Field_Hubspot_Keys.php:130
+msgid "Portal ID de HubSpot"
+msgstr ""
+
+#: includes/Elementor/Field_Hubspot_Keys.php:132
+msgid "Déjalo vacío junto al Form GUID si este formulario no debe enviarse a HubSpot."
+msgstr ""
+
+#: includes/Elementor/Field_Hubspot_Keys.php:140
+msgid "Form GUID de HubSpot"
+msgstr ""
+
+#: includes/Elementor/Field_Hubspot_Keys.php:149
+msgid "Mapeo de campos"
+msgstr ""
+
+#: includes/Elementor/Field_Hubspot_Keys.php:152
+msgid "Las filas sin propiedad de HubSpot no se envían."
+msgstr ""
+
+#: includes/Elementor/Form_Validator.php:40
+msgid "El formulario no tiene identificador. Ponle uno en Avanzado → Form ID del widget."
+msgstr ""
+
+#. translators: %s: identificador del formulario.
+#: includes/Elementor/Form_Validator.php:49
+#, php-format
+msgid "No hay ninguna plantilla de pago cuyo formulario sea «%s»."
+msgstr ""
+
+#. translators: 1: etiqueta del campo, 2: identificador.
+#: includes/Elementor/Form_Validator.php:61
+#, php-format
+msgid "Falta el campo «%1$s» con el identificador %2$s."
+msgstr ""
+
+#. translators: %s: identificador del campo.
+#: includes/Elementor/Form_Validator.php:75
+#, php-format
+msgid "La plantilla ofrece pago único y mensual, pero el formulario no tiene el campo %s para elegir."
+msgstr ""
+
+#: includes/Elementor/Form_Validator.php:94
+#: includes/Library/Variants.php:167
+msgid "Correo electrónico"
+msgstr ""
+
+#: includes/Frontend/Shortcode_Base.php:145
+msgid "El pago se canceló antes de completarse."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Base.php:146
+msgid "La sesión de pago caducó."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Base.php:147
+msgid "El banco rechazó la tarjeta."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Base.php:148
+msgid "La tarjeta no tenía fondos suficientes."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Base.php:149
+msgid "La tarjeta está caducada."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Base.php:150
+msgid "El código de seguridad no era correcto."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Base.php:151
+msgid "Hubo un problema técnico al iniciar el cobro."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Base.php:156
+msgid "El pago no se pudo completar."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Failure.php:39
+msgid "No encontramos ningún pago asociado a este enlace."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Failure.php:47
+msgid "Tu pago sí se completó. Recibirás un correo de confirmación."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Failure.php:51
+msgid "Tu pago sigue en proceso. Te avisaremos por correo en cuanto se confirme."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Failure.php:57
+msgid ""
+"No pudimos completar tu pago.\n"
+"\n"
+"[motivo]\n"
+"\n"
+"Puedes volver a intentarlo. Si el problema sigue, escríbenos y te ayudamos."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Thankyou.php:41
+msgid "Gracias por tu visita."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Thankyou.php:51
+msgid "Estamos confirmando tu pago. En cuanto se complete recibirás un correo."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Thankyou.php:52
+msgid "Este pago no se completó."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Thankyou.php:75
+msgid ""
+"¡Gracias, [nombre]!\n"
+"\n"
+"Tu aporte mensual de [importe_mensual] quedó activo. El próximo cobro será el [proximo_cobro].\n"
+"\n"
+"Te hemos enviado un correo con los detalles."
+msgstr ""
+
+#: includes/Frontend/Shortcode_Thankyou.php:78
+msgid ""
+"¡Gracias, [nombre]!\n"
+"\n"
+"Hemos recibido tu pago de [importe]. Tu referencia es [referencia].\n"
+"\n"
+"Te hemos enviado un correo de confirmación."
+msgstr ""
+
+#: includes/HubSpot/Contact_Service.php:49
+msgid "El contacto no tiene un correo válido; no se puede identificar en HubSpot."
+msgstr ""
+
+#: includes/HubSpot/Contact_Service.php:170
+msgid "HubSpot siguió rechazando el contacto tras quitar las propiedades desconocidas."
+msgstr ""
+
+#: includes/HubSpot/Crm_Client.php:69
+msgid "Falta el token de la aplicación privada de HubSpot."
+msgstr ""
+
+#: includes/HubSpot/Crm_Client.php:152
+msgid "HubSpot rechazó los datos. Suele ser una propiedad personalizada que todavía no existe en el portal."
+msgstr ""
+
+#: includes/HubSpot/Crm_Client.php:153
+msgid "El token de HubSpot no es válido o caducó."
+msgstr ""
+
+#: includes/HubSpot/Crm_Client.php:154
+msgid "Al token le faltan permisos. Revisa los ámbitos de contactos y negocios en la aplicación privada."
+msgstr ""
+
+#: includes/HubSpot/Crm_Client.php:155
+msgid "HubSpot no encontró el recurso."
+msgstr ""
+
+#: includes/HubSpot/Crm_Client.php:156
+#: includes/HubSpot/Forms_Client.php:125
+msgid "HubSpot está limitando las llamadas. Se reintentará más tarde."
+msgstr ""
+
+#. translators: %d: código HTTP.
+#: includes/HubSpot/Crm_Client.php:161
+#: includes/HubSpot/Forms_Client.php:130
+#, php-format
+msgid "HubSpot respondió con el código %d."
+msgstr ""
+
+#: includes/HubSpot/Deal_Service.php:202
+msgid "HubSpot siguió rechazando el negocio tras quitar las propiedades desconocidas."
+msgstr ""
+
+#: includes/HubSpot/Dispatcher.php:82
+msgid "Ningún campo mapeado trajo valor. Revisa que los nombres del lado de Elementor coincidan con los identificadores reales del formulario."
+msgstr ""
+
+#: includes/HubSpot/Forms_Client.php:69
+msgid "Enviado a HubSpot."
+msgstr ""
+
+#: includes/HubSpot/Forms_Client.php:122
+msgid "HubSpot rechazó los datos. Suele ser una propiedad que no existe en el portal o un valor con formato inesperado."
+msgstr ""
+
+#: includes/HubSpot/Forms_Client.php:123
+msgid "HubSpot denegó el acceso. Revisa que el Portal ID y el Form GUID sean de este portal."
+msgstr ""
+
+#: includes/HubSpot/Forms_Client.php:124
+msgid "HubSpot no encontró el formulario. Revisa el Form GUID."
+msgstr ""
+
+#: includes/Library/Clipboard_Exporter.php:69
+msgid "Formulario copiado. Abre una página con Elementor y pega con Ctrl/Cmd + V."
+msgstr ""
+
+#: includes/Library/Clipboard_Exporter.php:70
+msgid "No se pudo usar el portapapeles del editor. Usa «Insertar desde Mis plantillas», que no depende del navegador."
+msgstr ""
+
+#: includes/Library/Elementor_Template_Registrar.php:45
+msgid "La biblioteca de plantillas de Elementor no está disponible. ¿Está Elementor activo?"
+msgstr ""
+
+#: includes/Library/Elementor_Template_Registrar.php:52
+#: includes/Library/Form_Library.php:113
+#: includes/Library/Page_Builder.php:36
+msgid "Variante desconocida."
+msgstr ""
+
+#. translators: %s: nombre de la variante.
+#: includes/Library/Elementor_Template_Registrar.php:58
+#, php-format
+msgid "Pagos Stripe · %s"
+msgstr ""
+
+#: includes/Library/Form_Library.php:152
+msgid "Variante disponible en «Mis plantillas» del editor de Elementor."
+msgstr ""
+
+#. translators: 1: enlace a la página, 2: enlace a la plantilla.
+#: includes/Library/Form_Library.php:175
+#, php-format
+msgid "Creados: %1$s (borrador) y su %2$s. Edita la página con Elementor y completa la plantilla."
+msgstr ""
+
+#: includes/Library/Form_Library.php:176
+msgid "la página"
+msgstr ""
+
+#: includes/Library/Form_Library.php:177
+msgid "plantilla de pago"
+msgstr ""
+
+#: includes/Library/Page_Builder.php:114
+msgid "Confirmación de tu aporte"
+msgstr ""
+
+#: includes/Library/Page_Builder.php:115
+msgid "Hemos recibido tu mensaje"
+msgstr ""
+
+#: includes/Library/Page_Builder.php:138
+msgid ""
+"Hola [nombre],\n"
+"\n"
+"Hemos recibido tu mensaje y te responderemos pronto.\n"
+"\n"
+"Gracias por escribirnos."
+msgstr ""
+
+#: includes/Library/Page_Builder.php:141
+msgid ""
+"Hola [nombre],\n"
+"\n"
+"Gracias por tu aporte. Hemos confirmado tu pago correctamente.\n"
+"\n"
+"Un saludo."
+msgstr ""
+
+#: includes/Library/Variants.php:43
+msgid "Contacto simple"
+msgstr ""
+
+#: includes/Library/Variants.php:44
+msgid "Formulario de «Contáctanos», sin cobro. Envía a HubSpot al enviarse y notifica por correo."
+msgstr ""
+
+#: includes/Library/Variants.php:49
+msgid "Pago único, importe libre"
+msgstr ""
+
+#: includes/Library/Variants.php:50
+msgid "Donación en la que la persona escribe cuánto quiere aportar, dentro del rango que fije la plantilla."
+msgstr ""
+
+#: includes/Library/Variants.php:55
+msgid "Pago único, importe fijo"
+msgstr ""
+
+#: includes/Library/Variants.php:56
+msgid "Inscripción o cuota de importe cerrado. El importe lo decide la plantilla, no el formulario."
+msgstr ""
+
+#: includes/Library/Variants.php:61
+#: includes/Templates/Metabox_Montos.php:141
+msgid "Suscripción mensual"
+msgstr ""
+
+#: includes/Library/Variants.php:62
+msgid "Donación recurrente que se cobra cada mes hasta que se cancele."
+msgstr ""
+
+#: includes/Library/Variants.php:67
+msgid "Mixto: la persona elige"
+msgstr ""
+
+#: includes/Library/Variants.php:68
+msgid "Un solo formulario con la opción de aportar una vez o cada mes."
+msgstr ""
+
+#: includes/Library/Variants.php:140
+msgid "Continuar al pago"
+msgstr ""
+
+#: includes/Library/Variants.php:140
+msgid "Enviar"
+msgstr ""
+
+#: includes/Library/Variants.php:166
+msgid "Nombre completo"
+msgstr ""
+
+#: includes/Library/Variants.php:171
+msgid "Teléfono"
+msgstr ""
+
+#: includes/Library/Variants.php:172
+#: includes/Templates/Metabox_Correo.php:52
+msgid "Asunto"
+msgstr ""
+
+#: includes/Library/Variants.php:173
+msgid "Mensaje"
+msgstr ""
+
+#: includes/Library/Variants.php:227
+msgid "Importe de tu aporte"
+msgstr ""
+
+#: includes/Library/Variants.php:240
+msgid "¿Con qué frecuencia?"
+msgstr ""
+
+#: includes/Library/Variants.php:243
+msgid ""
+"Una vez|single\n"
+"Cada mes|month"
+msgstr ""
+
+#: includes/Library/Variants.php:251
+#: includes/Templates/Metabox_Reporte.php:73
+msgid "Frecuencia"
+msgstr ""
+
+#: includes/Library/Views/library.php:20
+msgid "Cada formulario viene armado: identificadores correctos, campos técnicos, campos de UTM, la acción tras el envío ya elegida y en modo prueba, y las filas de mapeo de HubSpot creadas con el lado de Elementor escrito."
+msgstr ""
+
+#: includes/Library/Views/library.php:22
+msgid "Se dejan en blanco a propósito el <strong>Portal ID</strong>, el <strong>Form GUID</strong> y el nombre de la propiedad de HubSpot de cada fila: es lo único que cambia en cada portal. Si no los rellenas, el formulario no envía a HubSpot, y eso es una opción válida."
+msgstr ""
+
+#: includes/Library/Views/library.php:40
+msgid "con cobro"
+msgstr ""
+
+#: includes/Library/Views/library.php:42
+msgid "sin cobro"
+msgstr ""
+
+#: includes/Library/Views/library.php:46
+#: includes/Templates/Cpt_Plantilla_Pago.php:269
+msgid "mensual"
+msgstr ""
+
+#: includes/Library/Views/library.php:50
+msgid "pago único"
+msgstr ""
+
+#: includes/Library/Views/library.php:58
+#: includes/Library/Views/library.php:98
+msgid "Copiar formulario"
+msgstr ""
+
+#: includes/Library/Views/library.php:68
+msgid "Actualizar en Mis plantillas"
+msgstr ""
+
+#: includes/Library/Views/library.php:69
+#: includes/Library/Views/library.php:102
+msgid "Añadir a Mis plantillas"
+msgstr ""
+
+#: includes/Library/Views/library.php:78
+msgid "Título de la página"
+msgstr ""
+
+#: includes/Library/Views/library.php:79
+#: includes/Library/Views/library.php:106
+msgid "Crear página"
+msgstr ""
+
+#: includes/Library/Views/library.php:85
+msgid "Disponible en «Mis plantillas» del editor."
+msgstr ""
+
+#: includes/Library/Views/library.php:87
+msgid "Todavía no está en «Mis plantillas»."
+msgstr ""
+
+#: includes/Library/Views/library.php:94
+msgid "Cómo usar cada acción"
+msgstr ""
+
+#: includes/Library/Views/library.php:99
+msgid "Deja el formulario en el portapapeles del editor. Abre cualquier página con Elementor y pega con Ctrl/Cmd + V. Es la vía rápida."
+msgstr ""
+
+#: includes/Library/Views/library.php:103
+msgid "Publica la variante en la biblioteca de Elementor. En el editor, icono de carpeta → Mis plantillas. Es la vía soportada por Elementor y la que conviene usar si el pegado no funciona en tu navegador."
+msgstr ""
+
+#: includes/Library/Views/library.php:107
+msgid "Crea un borrador de página con el formulario ya colocado y su plantilla de pago asociada, con un identificador de formulario único. Es lo más completo: no hay que vincular nada a mano."
+msgstr ""
+
+#: includes/Stripe/Checkout_Service.php:114
+msgid "No se pudo iniciar el cobro. Vuelve a intentarlo."
+msgstr ""
+
+#: includes/Stripe/Checkout_Service.php:126
+msgid "El cobro no está disponible en este momento. Avisa a quien administra el sitio."
+msgstr ""
+
+#: includes/Stripe/Checkout_Service.php:152
+msgid "No se pudo iniciar el cobro. Vuelve a intentarlo en unos minutos."
+msgstr ""
+
+#. translators: %s: nombre de la campaña.
+#: includes/Stripe/Checkout_Service.php:259
+#, php-format
+msgid "%s (mensual)"
+msgstr ""
+
+#: includes/Stripe/Checkout_Service.php:386
+#: includes/Stripe/Checkout_Service.php:406
+msgid "Este envío ya se está procesando. Espera un momento antes de volver a intentarlo."
+msgstr ""
+
+#: includes/Stripe/Checkout_Service.php:392
+msgid "El cobro no está disponible en este momento."
+msgstr ""
+
+#: includes/Stripe/Return_Controller.php:220
+msgid "Confirmando tu pago…"
+msgstr ""
+
+#: includes/Stripe/Return_Controller.php:221
+msgid "Estamos confirmando tu pago con el banco. No cierres esta ventana."
+msgstr ""
+
+#: includes/Stripe/Return_Controller.php:222
+msgid "Está tardando más de lo normal. Tu pago sigue en proceso y recibirás un correo en cuanto se confirme. Puedes cerrar esta ventana sin problema."
+msgstr ""
+
+#: includes/Stripe/Return_Controller.php:223
+msgid "No pudimos confirmar el pago en este momento."
+msgstr ""
+
+#: includes/Stripe/Subscription_Service.php:46
+msgid "Esta suscripción ya estaba cancelada."
+msgstr ""
+
+#: includes/Stripe/Subscription_Service.php:55
+msgid "No hay conexión con Stripe. Revisa las credenciales."
+msgstr ""
+
+#: includes/Stripe/Subscription_Service.php:79
+msgid "Stripe rechazó la cancelación. Revisa el registro para el detalle."
+msgstr ""
+
+#: includes/Stripe/Subscription_Service.php:90
+msgid "La suscripción se cancelará al terminar el período ya pagado."
+msgstr ""
+
+#: includes/Stripe/Subscription_Service.php:106
+msgid "Suscripción cancelada."
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:82
+#: includes/Templates/Cpt_Plantilla_Pago.php:84
+#: includes/Templates/Cpt_Plantilla_Pago.php:90
+msgid "Plantillas de pago"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:83
+msgid "Plantilla de pago"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:85
+msgid "Añadir nueva"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:86
+msgid "Añadir plantilla de pago"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:87
+msgid "Nueva plantilla"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:88
+msgid "Editar plantilla"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:89
+msgid "Ver plantilla"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:91
+msgid "Buscar plantillas"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:92
+msgid "No hay plantillas todavía."
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:93
+msgid "No hay plantillas en la papelera."
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:125
+msgid "Nombre de la campaña, por ejemplo: Donación mensual 2026"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:152
+msgid "Cuerpo del correo de confirmación"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:166
+msgid "El editor grande de arriba es el cuerpo del correo de confirmación que recibe quien paga."
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:167
+msgid "Puedes usar marcadores como <code>[nombre]</code> o <code>[email]</code>: se sustituyen por los valores que la persona escribió en el formulario. Los datos de tarjeta nunca se sustituyen, aunque se nombren."
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:232
+msgid "Frecuencias"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:259
+msgid "sin asignar"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:268
+msgid "única"
+msgstr ""
+
+#: includes/Templates/Cpt_Plantilla_Pago.php:305
+msgid "lista vacía"
+msgstr ""
+
+#: includes/Templates/Metabox_Correo.php:32
+msgid "Correo de confirmación"
+msgstr ""
+
+#: includes/Templates/Metabox_Correo.php:44
+msgid "Enviar a"
+msgstr ""
+
+#: includes/Templates/Metabox_Correo.php:46
+msgid "Normalmente un marcador con el campo de correo del formulario, por ejemplo <code>[email]</code>. También admite una dirección fija."
+msgstr ""
+
+#: includes/Templates/Metabox_Correo.php:54
+msgid "Admite marcadores."
+msgstr ""
+
+#: includes/Templates/Metabox_Correo.php:55
+msgid "Gracias por tu donación, [nombre]"
+msgstr ""
+
+#: includes/Templates/Metabox_Correo.php:60
+msgid "Copia oculta a"
+msgstr ""
+
+#: includes/Templates/Metabox_Correo.php:62
+msgid "Separa varias direcciones con comas. Las que no sean direcciones válidas se descartan al guardar."
+msgstr ""
+
+#: includes/Templates/Metabox_Correo.php:67
+msgid "Este correo se envía solo cuando el cobro está confirmado, nunca al iniciarlo."
+msgstr ""
+
+#: includes/Templates/Metabox_Correos_Suscripcion.php:32
+msgid "Correos de la suscripción mensual"
+msgstr ""
+
+#: includes/Templates/Metabox_Correos_Suscripcion.php:46
+msgid "Este formulario no ofrece suscripción mensual todavía. Si la activas en «Montos y frecuencia», estos correos entrarán en uso."
+msgstr ""
+
+#: includes/Templates/Metabox_Correos_Suscripcion.php:52
+msgid "Recibo de cada cobro mensual"
+msgstr ""
+
+#: includes/Templates/Metabox_Correos_Suscripcion.php:54
+msgid "Se envía en cada renovación cobrada. Si lo dejas vacío se usa el cuerpo del correo de confirmación."
+msgstr ""
+
+#: includes/Templates/Metabox_Correos_Suscripcion.php:59
+msgid "Aviso de cobro fallido"
+msgstr ""
+
+#: includes/Templates/Metabox_Correos_Suscripcion.php:61
+msgid "Se envía cuando un cobro mensual no se puede completar. Incluye <code>[enlace_actualizar_pago]</code> para que la persona pueda cambiar su tarjeta: sin ese enlace la suscripción se pierde."
+msgstr ""
+
+#: includes/Templates/Metabox_Correos_Suscripcion.php:66
+msgid "Confirmación de cancelación"
+msgstr ""
+
+#: includes/Templates/Metabox_Correos_Suscripcion.php:68
+msgid "Se envía al cancelarse la suscripción, la cancele quien la cancele."
+msgstr ""
+
+#: includes/Templates/Metabox_Formulario.php:32
+msgid "Formulario asociado"
+msgstr ""
+
+#: includes/Templates/Metabox_Formulario.php:49
+msgid "Identificador del formulario"
+msgstr ""
+
+#: includes/Templates/Metabox_Formulario.php:51
+msgid "Es el <strong>Form ID</strong> del widget de formulario en Elementor, en Avanzado → Form ID. Si copiaste el formulario desde la biblioteca del módulo, ya lo trae puesto."
+msgstr ""
+
+#: includes/Templates/Metabox_Formulario.php:57
+msgid "Sin este dato la plantilla no se aplica a ningún formulario y el cobro se bloqueará."
+msgstr ""
+
+#. translators: %s: lista de enlaces a las otras plantillas.
+#: includes/Templates/Metabox_Formulario.php:70
+#, php-format
+msgid "Hay más de una plantilla para este formulario: %s. Se usará la modificada más recientemente, lo que hace el comportamiento imprevisible. Conviene dejar solo una."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:54
+msgid "Este formulario no envía a HubSpot. Es una opción válida: el cobro y el correo funcionan igual. Para activarlo, rellena los dos campos siguientes."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:58
+msgid "Falta uno de los dos datos. Hacen falta los dos para enviar: con solo uno no se envía nada."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:64
+msgid "Portal ID"
+msgstr ""
+
+#. translators: %s: Portal ID global configurado.
+#: includes/Templates/Metabox_Hubspot.php:69
+#, php-format
+msgid "Prerrellenado con el Portal ID global de la configuración (%s)."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:72
+msgid "Lo encuentras en la URL de tu cuenta de HubSpot."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:78
+msgid "Form GUID"
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:80
+msgid "Identificador del formulario de HubSpot que recibirá los envíos."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:85
+msgid "Negocio en el CRM"
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:86
+msgid "Solo se crea cuando el cobro se confirma. Un cobro rechazado o abandonado no genera nada en el CRM."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:90
+msgid "Pipeline"
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:92
+msgid "Identificador interno del pipeline. Si lo dejas vacío se usa el pipeline por omisión del portal."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:98
+msgid "Etapa del negocio"
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:100
+msgid "Normalmente la etapa de cerrado ganado, porque el cobro ya está confirmado."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:106
+msgid "Nombre del negocio"
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:108
+msgid "Admite marcadores. Si lo dejas vacío se usa el título de esta plantilla."
+msgstr ""
+
+#: includes/Templates/Metabox_Hubspot.php:109
+msgid "Donación [nombre]"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:39
+msgid "Montos y frecuencia"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:58
+msgid "Código ISO de tres letras. Debe estar habilitada en la cuenta de Stripe."
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:64
+msgid "Cómo se decide el importe"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:67
+msgid "Importe fijo: siempre el mismo"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:68
+msgid "Lista cerrada: la persona elige entre varios"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:69
+msgid "Rango: la persona escribe un importe entre un mínimo y un máximo"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:71
+msgid "El importe que llegue del formulario se comprueba contra esta política <strong>en el servidor</strong>. Lo que quede fuera se rechaza antes de llegar a Stripe, aunque alguien manipule el campo desde su navegador."
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:76
+msgid "Importe fijo"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:78
+msgid "Solo se usa con «importe fijo»."
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:95
+msgid "Importes permitidos"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:97
+msgid "Separados por comas. Solo se usa con «lista cerrada»."
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:106
+msgid "Importe mínimo"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:116
+msgid "Importe máximo"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:125
+msgid "Solo se usan con «rango». Dejar el máximo vacío significa sin tope, lo que no es recomendable: un tope protege de errores de tecleo y de pruebas con importes absurdos."
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:128
+msgid "Frecuencias que ofrece este formulario"
+msgstr ""
+
+#: includes/Templates/Metabox_Montos.php:144
+msgid "Si marcas las dos, el formulario debe tener el campo de frecuencia para que la persona elija. Si no marcas ninguna, se asume pago único."
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:24
+msgid "Lunes"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:25
+msgid "Martes"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:26
+msgid "Miércoles"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:27
+msgid "Jueves"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:28
+msgid "Viernes"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:29
+msgid "Sábado"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:30
+msgid "Domingo"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:49
+msgid "Informe periódico"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:76
+msgid "No enviar"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:77
+msgid "Semanal"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:78
+msgid "Mensual"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:82
+msgid "Días (si es semanal)"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:93
+msgid "Día del mes (si es mensual)"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:101
+msgid "Enviar el informe a"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:103
+msgid "Separa varias direcciones con comas."
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:116
+msgid "Enviar informe ahora"
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:117
+msgid "Usa la configuración ya guardada. Si acabas de cambiar algo, guarda primero."
+msgstr ""
+
+#: includes/Templates/Metabox_Reporte.php:127
+msgid "No se pudo enviar. Revisa el historial de entregas."
+msgstr ""
+
+#: includes/Templates/Metabox_Resultado.php:32
+msgid "Páginas de resultado"
+msgstr ""
+
+#: includes/Templates/Metabox_Resultado.php:44
+msgid "URL tras un cobro confirmado"
+msgstr ""
+
+#: includes/Templates/Metabox_Resultado.php:46
+msgid "Si la dejas vacía se usa <code>/pago-exitoso</code>."
+msgstr ""
+
+#: includes/Templates/Metabox_Resultado.php:53
+msgid "Texto de la página de agradecimiento"
+msgstr ""
+
+#: includes/Templates/Metabox_Resultado.php:55
+msgid "Lo pinta el shortcode <code>[swpagos_pago_exitoso]</code>. Admite marcadores con los datos de quien pagó."
+msgstr ""
+
+#: includes/Templates/Metabox_Resultado.php:60
+msgid "URL tras un cobro rechazado"
+msgstr ""
+
+#: includes/Templates/Metabox_Resultado.php:62
+msgid "Si la dejas vacía se usa <code>/pago-rechazado</code>."
+msgstr ""
+
+#: includes/Templates/Metabox_Resultado.php:69
+msgid "Texto de la página de rechazo"
+msgstr ""
+
+#: includes/Templates/Metabox_Resultado.php:71
+msgid "Lo pinta el shortcode <code>[swpagos_pago_rechazado]</code>."
+msgstr ""

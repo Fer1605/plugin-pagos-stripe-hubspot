@@ -1,0 +1,12 @@
+.DS_Store
+*.log
+
+# Paquetes y entorno
+*.zip
+.env
+.idea/
+.vscode/
+
+# Documentación de la librería de Stripe (no se necesita para funcionar)
+/vendor/stripe/stripe-php/*.md
+/vendor/stripe/stripe-php/justfile

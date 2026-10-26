@@ -1,0 +1,15 @@
+{
+  "name": "fer1605/plugin-pagos-stripe-hubspot",
+  "description": "Pagos Stripe + HubSpot para Elementor",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [ { "name": "Fer Santizo", "homepage": "https://github.com/Fer1605" } ],
+  "require": {
+    "php": ">=8.1",
+    "stripe/stripe-php": "^17.0"
+  },
+  "config": {
+    "platform": { "php": "8.1" },
+    "optimize-autoloader": true
+  }
+}

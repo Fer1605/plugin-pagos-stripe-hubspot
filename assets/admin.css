@@ -1,0 +1,546 @@
+/* Pantallas de administración de Pagos Stripe + HubSpot.
+   El armazón y la paleta replican el panel del módulo de referencia
+   (views/admin-unified.css) para que los dos se vean como el mismo sistema. */
+
+.swpagos-wrap {
+	--swpagos-bg: #f4f6f8;
+	--swpagos-surface: #ffffff;
+	--swpagos-border: #d0d7de;
+	--swpagos-border-soft: #e6ebef;
+	--swpagos-text: #1f2933;
+	--swpagos-muted: #52606d;
+	--swpagos-primary: #0f6cbf;
+	--swpagos-primary-strong: #0b5aa0;
+	--swpagos-radius: 12px;
+	background: var(--swpagos-bg);
+	border: 1px solid var(--swpagos-border-soft);
+	border-radius: var(--swpagos-radius);
+	padding: 18px;
+	margin-top: 16px;
+	margin-right: 20px;
+}
+
+.swpagos-wrap > h1 {
+	color: var(--swpagos-text);
+	margin-bottom: 14px;
+	padding: 0;
+}
+
+.swpagos-wrap .nav-tab-wrapper {
+	border-bottom: 1px solid var(--swpagos-border);
+	margin-bottom: 16px;
+	padding-bottom: 0;
+}
+
+.swpagos-wrap .nav-tab {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.swpagos-panel {
+	background: var(--swpagos-surface);
+	border: 1px solid var(--swpagos-border);
+	border-radius: var(--swpagos-radius);
+	padding: 18px;
+}
+
+.swpagos-panel > h2:first-child,
+.swpagos-panel > h3:first-child,
+.swpagos-panel > p:first-child {
+	margin-top: 0;
+}
+
+.swpagos-wrap h1,
+.swpagos-wrap h2,
+.swpagos-wrap h3,
+.swpagos-wrap h4 {
+	color: var(--swpagos-text);
+}
+
+.swpagos-wrap p,
+.swpagos-wrap li,
+.swpagos-wrap .description {
+	color: var(--swpagos-muted);
+}
+
+.swpagos-wrap input[type="text"],
+.swpagos-wrap input[type="email"],
+.swpagos-wrap input[type="password"],
+.swpagos-wrap input[type="url"],
+.swpagos-wrap input[type="number"],
+.swpagos-wrap input[type="search"],
+.swpagos-wrap textarea,
+.swpagos-wrap select {
+	border: 1px solid var(--swpagos-border);
+	border-radius: 8px;
+	min-height: 38px;
+}
+
+.swpagos-wrap input[type="text"]:focus,
+.swpagos-wrap input[type="email"]:focus,
+.swpagos-wrap input[type="password"]:focus,
+.swpagos-wrap input[type="url"]:focus,
+.swpagos-wrap input[type="number"]:focus,
+.swpagos-wrap input[type="search"]:focus,
+.swpagos-wrap textarea:focus,
+.swpagos-wrap select:focus {
+	border-color: var(--swpagos-primary);
+	box-shadow: 0 0 0 1px var(--swpagos-primary);
+	outline: none;
+}
+
+.swpagos-wrap .form-table th {
+	color: var(--swpagos-text);
+	width: 240px;
+}
+
+.swpagos-wrap .widefat,
+.swpagos-wrap pre {
+	border-radius: 8px;
+	overflow: auto;
+}
+
+.swpagos-wrap .button-primary {
+	background: var(--swpagos-primary);
+	border-color: var(--swpagos-primary-strong);
+}
+
+.swpagos-wrap .button-primary:hover,
+.swpagos-wrap .button-primary:focus {
+	background: var(--swpagos-primary-strong);
+	border-color: var(--swpagos-primary-strong);
+}
+
+.swpagos-wrap form {
+	margin-top: 16px;
+}
+
+/* Bloque plegable de ajustes avanzados. */
+
+.swpagos-avanzado {
+	border: 1px solid var(--swpagos-border-soft);
+	border-radius: 10px;
+	background: #fbfcfd;
+	padding: 10px 14px;
+	margin-top: 20px;
+}
+
+.swpagos-avanzado > summary {
+	cursor: pointer;
+	font-weight: 600;
+	color: var(--swpagos-text);
+}
+
+.swpagos-avanzado[open] > summary {
+	margin-bottom: 10px;
+}
+
+.swpagos-wrap .swpagos-origen {
+	display: inline-block;
+	margin-left: 8px;
+	padding: 1px 7px;
+	border-radius: 9px;
+	font-size: 11px;
+	line-height: 1.7;
+	vertical-align: middle;
+}
+
+.swpagos-origen--constante {
+	background: #d5f5e3;
+	color: #145a32;
+}
+
+.swpagos-origen--opcion {
+	background: #fdebd0;
+	color: #7e5109;
+}
+
+.swpagos-origen--ausente {
+	background: #f2f3f4;
+	color: #566573;
+}
+
+.swpagos-wrap .swpagos-pista {
+	margin-top: 4px;
+	color: #646970;
+	font-size: 12px;
+}
+
+/* Las líneas de contexto bajo el Form ID también se pueden pulsar. */
+.swpagos-wrap td a .swpagos-pista {
+	color: #2271b1;
+}
+
+.swpagos-wrap code.swpagos-constante {
+	background: #f6f7f7;
+	font-size: 11px;
+}
+
+.swpagos-estado {
+	font-weight: 600;
+}
+
+.swpagos-estado--ok {
+	color: #145a32;
+}
+
+.swpagos-estado--mal {
+	color: #a93226;
+}
+
+.swpagos-wrap .form-table input[type="text"],
+.swpagos-wrap .form-table input[type="password"] {
+	width: 100%;
+	max-width: 520px;
+}
+
+/* Formularios listos para usar. */
+
+.swpagos-entradilla {
+	max-width: 760px;
+	font-size: 14px;
+	color: #50575e;
+}
+
+.swpagos-wrap h2.swpagos-grupo {
+	margin: 26px 0 0;
+	padding: 0;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	color: #646970;
+}
+
+.swpagos-biblioteca {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+	gap: 16px;
+	margin: 12px 0 28px;
+	align-items: start;
+}
+
+.swpagos-tarjeta {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px 18px 14px;
+}
+
+.swpagos-tarjeta h3 {
+	margin: 0 0 4px;
+	font-size: 15px;
+}
+
+.swpagos-tarjeta > p {
+	color: #50575e;
+	margin: 0 0 10px;
+}
+
+.swpagos-para {
+	font-weight: 600;
+	color: #1d2327 !important;
+	margin-bottom: 4px !important;
+}
+
+.swpagos-crear {
+	display: flex;
+	gap: 6px;
+	margin: 12px 0 6px;
+}
+
+.swpagos-crear label {
+	flex: 1;
+	min-width: 0;
+}
+
+.swpagos-crear input[type="text"] {
+	width: 100%;
+}
+
+.swpagos-nota-accion {
+	margin: 0 0 10px !important;
+}
+
+.swpagos-otras {
+	border-top: 1px solid #f0f0f1;
+	padding-top: 10px;
+	font-size: 12px;
+	color: #50575e;
+}
+
+.swpagos-otras summary {
+	cursor: pointer;
+	font-weight: 600;
+	color: #2271b1;
+}
+
+.swpagos-otras p,
+.swpagos-otras form {
+	margin: 10px 0 0;
+}
+
+.swpagos-pasos {
+	max-width: 860px;
+	margin-left: 18px;
+	font-size: 13px;
+	line-height: 1.7;
+	color: #50575e;
+}
+
+.swpagos-pasos li {
+	margin-bottom: 8px;
+}
+
+.swpagos-tarjeta .description {
+	margin: 0;
+	font-size: 12px;
+}
+
+/* Sección de negocios del CRM, dentro de los ajustes de HubSpot. */
+
+.swpagos-crm {
+	margin-top: 28px;
+	padding-top: 4px;
+	border-top: 1px solid #dcdcde;
+}
+
+.swpagos-crm > p.description {
+	max-width: 820px;
+	font-size: 13px;
+}
+
+.swpagos-lista-props {
+	margin-left: 18px;
+	list-style: disc;
+	font-size: 12px;
+	color: #50575e;
+}
+
+/* Listados del panel. */
+
+.swpagos-filtros {
+	margin: 14px 0;
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.swpagos-paginacion {
+	margin-top: 14px;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.swpagos-vacio {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 28px;
+	text-align: center;
+	color: #646970;
+}
+
+.swpagos-estado-chip {
+	display: inline-block;
+	padding: 1px 9px;
+	border-radius: 9px;
+	font-size: 11px;
+	line-height: 1.9;
+	background: #f0f0f1;
+	color: #50575e;
+	white-space: nowrap;
+}
+
+.swpagos-estado-chip--pagada,
+.swpagos-estado-chip--activa,
+.swpagos-estado-chip--success {
+	background: #d5f5e3;
+	color: #145a32;
+}
+
+.swpagos-estado-chip--pendiente,
+.swpagos-estado-chip--procesando,
+.swpagos-estado-chip--impago,
+.swpagos-estado-chip--pending {
+	background: #fdebd0;
+	color: #7e5109;
+}
+
+.swpagos-estado-chip--fallida,
+.swpagos-estado-chip--rechazada,
+.swpagos-estado-chip--failed {
+	background: #fadbd8;
+	color: #922b21;
+}
+
+.swpagos-estado-chip--reembolsada,
+.swpagos-estado-chip--cancelada {
+	background: #e8e8e8;
+	color: #515151;
+}
+
+.swpagos-metricas {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin: 18px 0;
+}
+
+.swpagos-metrica {
+	flex: 1 1 150px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 14px 16px;
+}
+
+.swpagos-metrica__valor {
+	display: block;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #1d2327;
+}
+
+.swpagos-metrica__etiqueta {
+	display: block;
+	margin-top: 4px;
+	font-size: 12px;
+	color: #646970;
+}
+
+/* Listados y diagnóstico: cada bloque sobre tarjeta blanca, como la pestaña de ajustes. */
+
+.swpagos-wrap .widefat {
+	background: var(--swpagos-surface);
+	border: 1px solid var(--swpagos-border);
+	border-radius: 10px;
+	box-shadow: 0 1px 2px rgba( 16, 24, 40, 0.04 );
+	margin-bottom: 16px;
+}
+
+.swpagos-wrap .swpagos-filtros {
+	background: var(--swpagos-surface);
+	border: 1px solid var(--swpagos-border);
+	border-radius: 10px;
+	padding: 12px 14px;
+	margin: 0 0 16px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+}
+
+.swpagos-wrap .swpagos-filtros .button-link {
+	margin-left: 4px;
+}
+
+.swpagos-wrap > h2 {
+	margin-top: 24px;
+	font-size: 16px;
+}
+
+/* Etiquetas de estado de los listados. Mismo lenguaje visual que las pantallas
+   de HubSpot, para que el panel se lea como uno solo. */
+
+.swpagos-marca {
+	display: inline-block;
+	padding: 2px 9px;
+	border-radius: 10px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.7;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.swpagos-marca--ok {
+	background: #0b8043;
+}
+
+.swpagos-marca--error {
+	background: #d93025;
+}
+
+.swpagos-marca--aviso {
+	background: #b06000;
+}
+
+.swpagos-marca--neutro {
+	background: #646970;
+}
+
+/* Un listado nativo no necesita el envoltorio de tarjeta: WordPress ya le da
+   el suyo. La tarjeta se reserva para las pantallas de configuración. */
+
+.swpagos-wrap .wp-list-table {
+	background: #fff;
+	box-shadow: none;
+	margin-bottom: 0;
+}
+
+.swpagos-wrap .subsubsub {
+	margin: 8px 0 4px;
+}
+
+.swpagos-wrap .tablenav .actions {
+	padding-top: 1px;
+}
+
+.swpagos-wrap .row-actions .swpagos-rojo {
+	color: #b32d23;
+}
+
+/* Lista de marcadores dentro de las plantillas de pago. */
+
+.swpagos-marcadores {
+	margin: 18px 0 4px;
+	padding: 12px 14px;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	background: #f6f7f7;
+}
+
+.swpagos-marcadores summary {
+	cursor: pointer;
+	color: #2271b1;
+}
+
+.swpagos-marcadores p {
+	margin: 12px 0 4px;
+}
+
+.swpagos-marcadores code {
+	background: #fff;
+}
+
+/* Caja de alertas de los logs de envío. */
+
+.swpagos-alertas {
+	margin: 16px 0 22px;
+	max-width: 720px;
+}
+
+.swpagos-alertas h2 {
+	margin-top: 0;
+	font-size: 15px;
+}
+
+.swpagos-alertas input[type="text"] {
+	width: 100%;
+	max-width: 520px;
+}
+
+.swpagos-botones {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	align-items: flex-start;
+}
+
+.swpagos-botones .button {
+	white-space: nowrap;
+}
